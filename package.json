@@ -1,0 +1,16 @@
+{
+  "name": "react-framework",
+  "version": "1.0.0",
+  "description": "This is a framework for quick development with react ",
+  "main": "index.js",
+  "repository": "https://touhid@work.webmascot.com/bitbucket/scm/gd/react-framework.git",
+  "author": "Touhid Mia <touhid@bitmascot.com>",
+  "license": "Web Mascot Pty. Ltd.",
+  "private": true,
+  "workspaces": [
+    "applications/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.15.0"
+  }
+}
