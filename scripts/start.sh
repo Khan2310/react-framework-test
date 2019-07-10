@@ -8,7 +8,8 @@ echo "Cloning TM React React Framework From Work bitbucket";
 if [ -d "$PROJECT_NAME" ]; then
   rm -rf "$PROJECT_NAME"
 fi
-ssh://git@work.webmascot.com:7999/gd/react-framework.git "$PROJECT_NAME"
+git clone ssh://git@work.webmascot.com:7999/gd/react-framework.git "$PROJECT_NAME"
+# git clone https://touhid@work.webmascot.com/bitbucket/scm/gd/react-framework.git "$PROJECT_NAME"
 
 cd "$PROJECT_NAME/$APPLICATIONS"
 
@@ -16,6 +17,6 @@ echo "Cloning TM React Project From GitHub";
 git clone https://github.com/hmtmcse/tm-react.git 
 
 
-cd ../..
+cd ..
 echo "Installing Dependency";
 yarn install
