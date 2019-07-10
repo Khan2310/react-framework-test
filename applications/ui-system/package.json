@@ -1,0 +1,16 @@
+{
+  "name": "ui-system",
+  "version": "1.0.0",
+  "description": "UI Component and Template",
+  "main": "index.js",
+  "author": "Masumul Hasan",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "tm-react": "^0.1.0"
+  }
+}

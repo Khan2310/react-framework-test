@@ -7,8 +7,7 @@
       "allowJs": false,
       "jsx": "react",
       "moduleResolution": "node",
-      "rootDirs": ["src", "stories"],
-      "baseUrl": "src",
+
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
       "noImplicitThis": true,
@@ -21,6 +20,5 @@
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true
     },
-    "include": ["src/**/*"],
     "exclude": ["node_modules", "build", "scripts"]
   }

@@ -20,7 +20,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6000",
+    "storybook": "start-storybook -p 6010",
     "build-storybook": "build-storybook"
   }
 }
