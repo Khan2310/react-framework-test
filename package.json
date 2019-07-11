@@ -15,6 +15,7 @@
     "start-app": "lerna run start-app --stream"
   },
   "devDependencies": {
-    "lerna": "^3.15.0"
+    "lerna": "^3.15.0",
+    "webpack-cli": "^3.3.5"
   }
 }
