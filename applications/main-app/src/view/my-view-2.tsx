@@ -7,7 +7,7 @@ export default class MyView extends TRComponent<any, TRComponentState> {
     renderUI() {
         return (
             <React.Fragment>
-                <MaterialButton>Button Link</MaterialButton>
+                <MaterialButton>ButtonLink</MaterialButton>
             </React.Fragment>
         );
     }
