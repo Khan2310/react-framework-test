@@ -1,8 +1,9 @@
 import React from 'react';
 import TRURLMapping from "tm-react/src/artifacts/config/tr-url-mapping";
 import TRLayoutInfoData from "tm-react/src/artifacts/data/view/tr-layout-info-data";
-import MyLayout from "../view/layouts/my-layout";
-import MyView from "../view/my-view";
+
+const PublicLayout = React.lazy(() => import('../view/layouts/public-layout'));
+const LoginView = React.lazy(() => import('../view/authentication/login-view'));
 
 
 export default class URLMapping extends TRURLMapping {
@@ -11,8 +12,8 @@ export default class URLMapping extends TRURLMapping {
         let pageWithLayout: Array<TRLayoutInfoData> = [];
 
         let publicLayoutInfo: TRLayoutInfoData = new TRLayoutInfoData();
-        publicLayoutInfo.layout = MyLayout
-        publicLayoutInfo.addPageInstance("/", MyView);
+        publicLayoutInfo.layout = PublicLayout;
+        publicLayoutInfo.addPageInstance("/", LoginView);
         pageWithLayout.push(publicLayoutInfo);
         return pageWithLayout
     }

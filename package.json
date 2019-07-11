@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "storybook": "lerna run storybook --stream",
-    "start": "lerna run start --stream"
+    "start-app": "lerna run start-app --stream"
   },
   "devDependencies": {
     "lerna": "^3.15.0"
