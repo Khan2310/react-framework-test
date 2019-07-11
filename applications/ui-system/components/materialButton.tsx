@@ -1,27 +1,30 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import {ButtonJss} from "../assets/jss/Mui-button-jss";
 import {CommonProps} from "./utils/commonProps";
 import TRReactComponent from "tm-react/src/artifacts/framework/tr-react-component";
+import style from './../assets/scss/component/_button.scss';
 
-const useStyles = makeStyles(ButtonJss);
-
-interface Props{
+interface Props extends CommonProps{
     children?: React.ReactNode;
 }
 
-export default class MaterialButton extends TRReactComponent<Props, any>{
+class MaterialButton extends TRReactComponent<Props, any>{
   render () {
-    const classes = useStyles();
-    const {children,
-    ...etc} = this.props;
+    const {
+        children,
+        classes,
+        ...etc
+    } = this.props;
+
     return (
         <div>
-            <Button className={classes.buttonPrimary}{...etc}>
+            <Button className='button' {...etc}>
                 {children}
             </Button>
         </div>
     );
   }
 }
+export default withStyles(style)(MaterialButton)
