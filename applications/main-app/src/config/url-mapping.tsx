@@ -4,6 +4,7 @@ import TRLayoutInfoData from "tm-react/src/artifacts/data/view/tr-layout-info-da
 
 const PublicLayout = React.lazy(() => import('../view/layouts/public-layout'));
 const LoginView = React.lazy(() => import('../view/authentication/login-view'));
+const MyView = React.lazy(() => import('../view/my-view'));
 
 
 export default class URLMapping extends TRURLMapping {
@@ -14,6 +15,7 @@ export default class URLMapping extends TRURLMapping {
         let publicLayoutInfo: TRLayoutInfoData = new TRLayoutInfoData();
         publicLayoutInfo.layout = PublicLayout;
         publicLayoutInfo.addPageInstance("/", LoginView);
+        publicLayoutInfo.addPageInstance("/ui-component", MyView);
         pageWithLayout.push(publicLayoutInfo);
         return pageWithLayout
     }

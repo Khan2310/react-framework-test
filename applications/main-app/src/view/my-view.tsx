@@ -1,14 +1,13 @@
 import React from 'react';
 import TRComponent from "tm-react/src/artifacts/component/tr-component";
+import TRComponentState from "tm-react/src/artifacts/component/tr-component-state";
+import MaterialButton from "ui-system/components/materialButton";
 
-
-
-
-export default class MyView extends TRComponent<any, any> {
+export default class MyView extends TRComponent<any, TRComponentState> {
     renderUI() {
         return (
             <React.Fragment>
-                <h1>Bismillah to My View From Main Application</h1>
+                <MaterialButton>Default Button</MaterialButton>
             </React.Fragment>
         );
     }
